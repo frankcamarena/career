@@ -232,7 +232,7 @@ export default function Home() {
           muted 
           loop 
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full object-cover"
           src={linesGraphVideo}
         />
         <div className="container mx-auto px-4 relative z-10">

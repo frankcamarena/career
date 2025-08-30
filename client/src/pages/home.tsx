@@ -460,7 +460,7 @@ export default function Home() {
             <Button 
               asChild
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-tableau-primary px-8 py-3"
+              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 bg-transparent"
               data-testid="button-connect-linkedin"
             >
               <a href="https://linkedin.com/in/alexrodriguez" target="_blank" rel="noopener noreferrer">

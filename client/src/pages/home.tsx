@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Linkedin, Github, ExternalLink, Award, Cloud, Code, ChartBar, Brain, Database, GraduationCap, Phone, MapPin } from "lucide-react";
+import neuronVideo from "@assets/neuron_video_1756522190115.mp4";
 
 const projects = [
   {
@@ -232,9 +233,8 @@ export default function Home() {
           loop 
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-20"
-        >
-          <source src="/attached_assets/neuron_video_1756522190115.mp4" type="video/mp4" />
-        </video>
+          src={neuronVideo}
+        />
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">

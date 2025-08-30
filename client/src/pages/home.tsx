@@ -153,6 +153,46 @@ export default function Home() {
               <h1 className="text-xl font-bold text-primary">Alexander Rodriguez</h1>
               <p className="text-sm text-muted-foreground">Business Data Analyst</p>
             </div>
+            
+            {/* Navigation Menu */}
+            <nav className="hidden md:flex items-center space-x-8">
+              <a 
+                href="#about" 
+                className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                data-testid="nav-about"
+              >
+                About
+              </a>
+              <a 
+                href="#projects" 
+                className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                data-testid="nav-projects"
+              >
+                Projects
+              </a>
+              <a 
+                href="#skills" 
+                className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                data-testid="nav-skills"
+              >
+                Skills
+              </a>
+              <a 
+                href="#certifications" 
+                className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                data-testid="nav-certifications"
+              >
+                Certifications
+              </a>
+              <a 
+                href="#contact" 
+                className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium"
+                data-testid="nav-contact"
+              >
+                Contact
+              </a>
+            </nav>
+            
             <div className="flex items-center space-x-4">
               <a 
                 href="mailto:alexander.rodriguez@email.com" 

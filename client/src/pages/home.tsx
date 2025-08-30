@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Linkedin, Github, ExternalLink, Award, Cloud, Code, ChartBar, Brain, Database, GraduationCap, Phone, MapPin } from "lucide-react";
 import linesGraphVideo from "@assets/lines_graph_1756523478531.mp4";
-import profileImage from "@assets/perfil_linkedin_1756524313231.png";
+import profileImage from "@assets/image_profile_1756566806677.jpeg";
 
 const projects = [
   {
@@ -13,7 +13,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Python", "Tableau", "SQL", "VaR Modeling"],
     insights: "Identified 3 critical risk factors that accounted for 80% of portfolio volatility",
-    link: "https://medium.com/@alexrodriguez/financial-risk-dashboard"
+    link: "https://medium.com/@frankcamarena/financial-risk-dashboard"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Python", "XGBoost", "AWS", "MLOps"],
     insights: "Transaction timing patterns were the strongest fraud indicators, improving detection by 23%",
-    link: "https://medium.com/@alexrodriguez/fraud-detection-ml"
+    link: "https://medium.com/@frankcamarena/fraud-detection-ml"
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Power BI", "DAX", "Azure", "ETL"],
     insights: "Consolidated 47 disparate reports into a single executive view, saving 15 hours/week",
-    link: "https://medium.com/@alexrodriguez/executive-kpi-dashboard"
+    link: "https://medium.com/@frankcamarena/executive-kpi-dashboard"
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["R", "K-Means", "Tableau", "RFM Analysis"],
     insights: "High-value segment represented only 12% of customers but 67% of revenue",
-    link: "https://medium.com/@alexrodriguez/market-segmentation"
+    link: "https://medium.com/@frankcamarena/market-segmentation"
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Apache Spark", "Airflow", "AWS S3", "PostgreSQL"],
     insights: "Automated error detection prevented 23 critical data quality issues",
-    link: "https://medium.com/@alexrodriguez/data-pipeline-automation"
+    link: "https://medium.com/@frankcamarena/data-pipeline-automation"
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Python", "Pandas", "Zipline", "Quantlib"],
     insights: "Mean reversion strategies outperformed momentum in volatile market conditions",
-    link: "https://medium.com/@alexrodriguez/algorithmic-trading-analysis"
+    link: "https://medium.com/@frankcamarena/algorithmic-trading-analysis"
   }
 ];
 
@@ -152,7 +152,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-xl font-bold text-primary">Alexander Rodriguez</h1>
+              <h1 className="text-xl font-bold text-primary">Frank Camarena</h1>
               <p className="text-sm text-muted-foreground">Business Data Analyst</p>
             </div>
             
@@ -197,14 +197,14 @@ export default function Home() {
             
             <div className="flex items-center space-x-4">
               <a 
-                href="mailto:alexander.rodriguez@email.com" 
+                href="mailto:fgustavocamarena@gmail.com" 
                 className="text-muted-foreground hover:text-primary transition-colors"
                 data-testid="link-email-header"
               >
                 <Mail className="w-5 h-5" />
               </a>
               <a 
-                href="https://linkedin.com/in/alexrodriguez" 
+                href="https://www.linkedin.com/in/frankcamarena/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -213,7 +213,7 @@ export default function Home() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://github.com/alexrodriguez" 
+                href="https://github.com/f10frank" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -481,11 +481,11 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Alexander Rodriguez</h3>
+              <h3 className="text-xl font-semibold mb-4">Frank Camarena</h3>
               <p className="text-gray-300 mb-4">Business Data Analyst specializing in transforming complex data into strategic business insights.</p>
               <div className="flex space-x-4">
                 <a 
-                  href="https://linkedin.com/in/alexrodriguez" 
+                  href="https://www.linkedin.com/in/frankcamarena/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -494,7 +494,7 @@ export default function Home() {
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://github.com/alexrodriguez" 
+                  href="https://github.com/f10frank" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -503,7 +503,7 @@ export default function Home() {
                   <Github className="w-5 h-5" />
                 </a>
                 <a 
-                  href="mailto:alexander.rodriguez@email.com" 
+                  href="mailto:fgustavocamarena@gmail.com" 
                   className="text-gray-300 hover:text-white transition-colors"
                   data-testid="link-email-footer"
                 >
@@ -527,7 +527,7 @@ export default function Home() {
               <div className="space-y-2 text-gray-300">
                 <p className="flex items-center">
                   <Mail className="mr-2 w-4 h-4" /> 
-                  <span data-testid="text-email">alexander.rodriguez@email.com</span>
+                  <span data-testid="text-email">fgustavocamarena@gmail.com</span>
                 </p>
                 <p className="flex items-center">
                   <Phone className="mr-2 w-4 h-4" /> 
@@ -544,7 +544,7 @@ export default function Home() {
           <hr className="border-gray-600 my-8" />
           
           <div className="text-center text-gray-300">
-            <p>&copy; 2024 Alexander Rodriguez. All rights reserved.</p>
+            <p>&copy; 2024 Frank Camarena. All rights reserved.</p>
           </div>
         </div>
       </footer>

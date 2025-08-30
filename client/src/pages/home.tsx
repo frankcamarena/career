@@ -226,7 +226,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-gradient min-h-[80vh] flex items-center text-white relative overflow-hidden">
+      <section className="min-h-[80vh] flex items-center text-white relative overflow-hidden bg-black">
         <video 
           autoPlay 
           muted 

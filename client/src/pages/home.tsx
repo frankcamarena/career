@@ -225,10 +225,17 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-gradient animated-background min-h-[80vh] flex items-center text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <div className="floating-particles"></div>
-        </div>
+      <section className="hero-gradient min-h-[80vh] flex items-center text-white relative overflow-hidden">
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        >
+          <source src="/attached_assets/neuron_video_1756522190115.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/30"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">

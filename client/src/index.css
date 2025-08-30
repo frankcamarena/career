@@ -102,7 +102,7 @@
 
 @layer components {
   .hero-gradient {
-    background: linear-gradient(135deg, #0176d3 0%, #032d60 100%);
+    background: #0176d3;
   }
   
   .contact-gradient {

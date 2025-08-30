@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Linkedin, Github, ExternalLink, Award, Cloud, Code, ChartBar, Brain, Database, GraduationCap, Phone, MapPin } from "lucide-react";
 import linesGraphVideo from "@assets/lines_graph_1756523478531.mp4";
+import profileImage from "@assets/perfil_linkedin_1756524313231.png";
 
 const projects = [
   {
@@ -304,12 +305,15 @@ export default function Home() {
                 </Card>
               </div>
             </div>
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Professional data analyst working with multiple monitors" 
-                className="rounded-xl shadow-lg" 
-              />
+            <div className="flex justify-center">
+              <div className="relative">
+                <img 
+                  src={profileImage}
+                  alt="Alexander Rodriguez - Business Data Analyst" 
+                  className="w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white" 
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-transparent"></div>
+              </div>
             </div>
           </div>
         </div>

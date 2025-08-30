@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Linkedin, Github, ExternalLink, Award, Cloud, Code, ChartBar, Brain, Database, GraduationCap, Phone, MapPin } from "lucide-react";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
 
 const projects = [
   {
@@ -60,31 +59,6 @@ const projects = [
     link: "https://medium.com/@alexrodriguez/algorithmic-trading-analysis"
   }
 ];
-
-// Data for interactive chart
-const performanceData = [
-  { month: 'Jan', revenue: 850000, efficiency: 78, insight: 'Revenue increased 15% due to new ML model implementation' },
-  { month: 'Feb', revenue: 920000, efficiency: 82, insight: 'Process optimization reduced operational costs by 12%' },
-  { month: 'Mar', revenue: 1050000, efficiency: 85, insight: 'Customer segmentation improved targeting by 28%' },
-  { month: 'Apr', revenue: 1180000, efficiency: 89, insight: 'Predictive analytics prevented $200K in potential losses' },
-  { month: 'May', revenue: 1320000, efficiency: 92, insight: 'Data pipeline automation saved 40 hours/week' },
-  { month: 'Jun', revenue: 1450000, efficiency: 95, insight: 'Real-time dashboard enabled 35% faster decision making' }
-];
-
-const CustomTooltip = ({ active, payload, label }: any) => {
-  if (active && payload && payload.length) {
-    const data = payload[0].payload;
-    return (
-      <div className="bg-white p-4 rounded-lg shadow-lg border border-gray-200 max-w-xs">
-        <p className="font-semibold text-gray-800 mb-2">{`${label} 2024`}</p>
-        <p className="text-blue-600 font-medium">{`Revenue: $${(data.revenue / 1000).toFixed(0)}K`}</p>
-        <p className="text-green-600 font-medium">{`Efficiency: ${data.efficiency}%`}</p>
-        <p className="text-sm text-gray-600 mt-2 italic">{data.insight}</p>
-      </div>
-    );
-  }
-  return null;
-};
 
 const skillCategories = [
   {
@@ -281,48 +255,11 @@ export default function Home() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <Card className="bg-white/10 backdrop-blur-sm border-white/20 p-6 rounded-xl shadow-2xl">
-                <CardContent className="p-0">
-                  <div className="mb-4">
-                    <h3 className="text-white text-lg font-semibold mb-2">Business Impact Analytics</h3>
-                    <p className="text-white/80 text-sm">Hover over data points to see key insights</p>
-                  </div>
-                  <div className="h-80 w-full">
-                    <ResponsiveContainer width="100%" height="100%">
-                      <LineChart data={performanceData}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.2)" />
-                        <XAxis 
-                          dataKey="month" 
-                          stroke="white" 
-                          fontSize={12}
-                        />
-                        <YAxis 
-                          stroke="white" 
-                          fontSize={12}
-                          tickFormatter={(value) => `$${(value / 1000).toFixed(0)}K`}
-                        />
-                        <Tooltip content={<CustomTooltip />} />
-                        <Line 
-                          type="monotone" 
-                          dataKey="revenue" 
-                          stroke="#ffffff" 
-                          strokeWidth={3}
-                          dot={{ fill: '#ffffff', strokeWidth: 2, r: 6 }}
-                          activeDot={{ r: 8, fill: '#fbbf24' }}
-                        />
-                      </LineChart>
-                    </ResponsiveContainer>
-                  </div>
-                  <div className="mt-4 flex justify-between text-white/80 text-sm">
-                    <div>
-                      <span className="font-medium">Total Growth:</span> +70.6%
-                    </div>
-                    <div>
-                      <span className="font-medium">Avg Efficiency:</span> 87%
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                alt="Modern data analytics workspace" 
+                className="rounded-xl shadow-2xl" 
+              />
             </div>
           </div>
         </div>

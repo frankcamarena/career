@@ -225,41 +225,35 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero-gradient hero-pattern min-h-[80vh] flex items-center text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Transforming Data into 
-                <span className="text-tableau-light"> Strategic Insights</span>
-              </h1>
-              <p className="text-xl mb-8 opacity-90">
-                Business Data Analyst with 5+ years of experience turning complex datasets into actionable business intelligence that drives $10M+ in value creation.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a 
-                  href="#projects" 
-                  className="bg-white text-tableau-primary px-8 py-3 rounded-lg font-semibold hover:bg-tableau-light transition-colors inline-flex items-center justify-center"
-                  data-testid="button-view-work"
-                >
-                  View My Work
-                  <ChartBar className="ml-2 w-4 h-4" />
-                </a>
-                <a 
-                  href="#contact" 
-                  className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-tableau-primary transition-colors inline-flex items-center justify-center"
-                  data-testid="button-get-in-touch"
-                >
-                  Get In Touch
-                </a>
-              </div>
-            </div>
-            <div className="hidden lg:block">
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Modern data analytics workspace" 
-                className="rounded-xl shadow-2xl" 
-              />
+      <section className="hero-gradient animated-background min-h-[80vh] flex items-center text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30">
+          <div className="floating-particles"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
+              Transforming Data into 
+              <span className="text-white block mt-2"> Strategic Insights</span>
+            </h1>
+            <p className="text-xl lg:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">
+              Business Data Analyst with 5+ years of experience turning complex datasets into actionable business intelligence that drives $10M+ in value creation.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <a 
+                href="#projects" 
+                className="bg-white text-blue-600 px-10 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center text-lg"
+                data-testid="button-view-work"
+              >
+                View My Work
+                <ChartBar className="ml-3 w-5 h-5" />
+              </a>
+              <a 
+                href="#contact" 
+                className="border-2 border-white text-white px-10 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center text-lg"
+                data-testid="button-get-in-touch"
+              >
+                Get In Touch
+              </a>
             </div>
           </div>
         </div>

@@ -107,36 +107,33 @@ const skillCategories = [
 
 const certifications = [
   {
-    title: "Tableau Desktop Specialist",
-    issuer: "Salesforce/Tableau",
-    icon: <Award className="text-3xl" />
+    title: "Data Visualization and Storytelling",
+    issuer: "Northeastern University",
+    icon: <ChartBar className="text-3xl" />
   },
   {
-    title: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-
+    title: "Google Cloud Platform",
+    issuer: "Google",
     icon: <Cloud className="text-3xl" />
   },
   {
-    title: "Microsoft Certified: Azure Data Scientist",
-    issuer: "Microsoft",
-
+    title: "Project Management Certification",
+    issuer: "Google",
     icon: <Award className="text-3xl" />
   },
   {
     title: "Google Analytics Individual Qualification",
     issuer: "Google",
-
     icon: <ChartBar className="text-3xl" />
   },
   {
-    title: "Certified Analytics Professional (CAP)",
-    issuer: "INFORMS",
+    title: "Experiential Network",
+    issuer: "Northeastern University",
     icon: <Database className="text-3xl" />
   },
   {
-    title: "Master of Science in Data Science",
-    issuer: "Stanford University",
+    title: "Master in Analytics",
+    issuer: "Northeastern University",
     icon: <GraduationCap className="text-3xl" />
   }
 ];
@@ -228,20 +225,8 @@ export default function Home() {
                 </Card>
                 <Card className="metric-card p-4 text-center">
                   <CardContent className="p-0">
-                    <div className="text-2xl font-bold text-primary" data-testid="text-value-generated">$10M+</div>
-                    <div className="text-sm text-muted-foreground">Value Generated</div>
-                  </CardContent>
-                </Card>
-                <Card className="metric-card p-4 text-center">
-                  <CardContent className="p-0">
                     <div className="text-2xl font-bold text-primary" data-testid="text-experience-years">5+</div>
                     <div className="text-sm text-muted-foreground">Years Experience</div>
-                  </CardContent>
-                </Card>
-                <Card className="metric-card p-4 text-center">
-                  <CardContent className="p-0">
-                    <div className="text-2xl font-bold text-primary" data-testid="text-certifications-count">15+</div>
-                    <div className="text-sm text-muted-foreground">Certifications</div>
                   </CardContent>
                 </Card>
               </div>

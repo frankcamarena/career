@@ -1,7 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Linkedin, Github, ExternalLink, Award, Cloud, Code, ChartBar, Brain, Database, GraduationCap, Phone, MapPin } from "lucide-react";
+import {
+  Mail,
+  Linkedin,
+  Github,
+  ExternalLink,
+  Award,
+  Cloud,
+  Code,
+  ChartBar,
+  Brain,
+  Database,
+  GraduationCap,
+  Phone,
+  MapPin,
+} from "lucide-react";
 import linesGraphVideo from "@assets/lines_graph_1756523478531.mp4";
 import profileImage from "@assets/image_profile_1756566806677.jpeg";
 
@@ -9,57 +23,75 @@ const projects = [
   {
     id: 1,
     title: "Financial Risk Assessment Dashboard",
-    description: "Comprehensive risk analysis platform that reduced portfolio losses by 35% through predictive modeling and real-time monitoring of market volatility indicators.",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    description:
+      "Comprehensive risk analysis platform that reduced portfolio losses by 35% through predictive modeling and real-time monitoring of market volatility indicators.",
+    image:
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Python", "Tableau", "SQL", "VaR Modeling"],
-    insights: "Identified 3 critical risk factors that accounted for 80% of portfolio volatility",
-    link: "https://medium.com/@frankcamarena/financial-risk-dashboard"
+    insights:
+      "Identified 3 critical risk factors that accounted for 80% of portfolio volatility",
+    link: "https://medium.com/@frankcamarena/financial-risk-dashboard",
   },
   {
     id: 2,
     title: "Fraud Detection ML Model",
-    description: "Advanced machine learning solution achieving 94% accuracy in fraud detection, saving the company $2.3M annually by identifying suspicious transactions in real-time.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    description:
+      "Advanced machine learning solution achieving 94% accuracy in fraud detection, saving the company $2.3M annually by identifying suspicious transactions in real-time.",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Python", "XGBoost", "AWS", "MLOps"],
-    insights: "Transaction timing patterns were the strongest fraud indicators, improving detection by 23%",
-    link: "https://medium.com/@frankcamarena/fraud-detection-ml"
+    insights:
+      "Transaction timing patterns were the strongest fraud indicators, improving detection by 23%",
+    link: "https://medium.com/@frankcamarena/fraud-detection-ml",
   },
   {
     id: 3,
     title: "Executive KPI Dashboard Suite",
-    description: "Comprehensive C-level dashboard providing real-time visibility into 15 critical business metrics, enabling faster decision-making and 28% improvement in strategic response time.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    description:
+      "Comprehensive C-level dashboard providing real-time visibility into 15 critical business metrics, enabling faster decision-making and 28% improvement in strategic response time.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Power BI", "DAX", "Azure", "ETL"],
-    insights: "Consolidated 47 disparate reports into a single executive view, saving 15 hours/week",
-    link: "https://medium.com/@frankcamarena/executive-kpi-dashboard"
+    insights:
+      "Consolidated 47 disparate reports into a single executive view, saving 15 hours/week",
+    link: "https://medium.com/@frankcamarena/executive-kpi-dashboard",
   },
   {
     id: 4,
     title: "Market Segmentation Analysis",
-    description: "Advanced customer segmentation using clustering algorithms that identified 7 distinct customer personas, leading to a 42% increase in targeted marketing campaign effectiveness.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    description:
+      "Advanced customer segmentation using clustering algorithms that identified 7 distinct customer personas, leading to a 42% increase in targeted marketing campaign effectiveness.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["R", "K-Means", "Tableau", "RFM Analysis"],
-    insights: "High-value segment represented only 12% of customers but 67% of revenue",
-    link: "https://medium.com/@frankcamarena/market-segmentation"
+    insights:
+      "High-value segment represented only 12% of customers but 67% of revenue",
+    link: "https://medium.com/@frankcamarena/market-segmentation",
   },
   {
     id: 5,
     title: "Data Pipeline Automation",
-    description: "End-to-end data pipeline automation that processes 500GB+ daily, reducing manual data preparation time by 85% and ensuring 99.9% data accuracy across all business units.",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    description:
+      "End-to-end data pipeline automation that processes 500GB+ daily, reducing manual data preparation time by 85% and ensuring 99.9% data accuracy across all business units.",
+    image:
+      "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Apache Spark", "Airflow", "AWS S3", "PostgreSQL"],
-    insights: "Automated error detection prevented 23 critical data quality issues",
-    link: "https://medium.com/@frankcamarena/data-pipeline-automation"
+    insights:
+      "Automated error detection prevented 23 critical data quality issues",
+    link: "https://medium.com/@frankcamarena/data-pipeline-automation",
   },
   {
     id: 6,
     title: "Algorithmic Trading Strategy Analysis",
-    description: "Quantitative analysis of trading strategies using statistical modeling and backtesting, achieving 18% annual return with maximum drawdown under 8% across multiple asset classes.",
-    image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
+    description:
+      "Quantitative analysis of trading strategies using statistical modeling and backtesting, achieving 18% annual return with maximum drawdown under 8% across multiple asset classes.",
+    image:
+      "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=300",
     technologies: ["Python", "Pandas", "Zipline", "Quantlib"],
-    insights: "Mean reversion strategies outperformed momentum in volatile market conditions",
-    link: "https://medium.com/@frankcamarena/algorithmic-trading-analysis"
-  }
+    insights:
+      "Mean reversion strategies outperformed momentum in volatile market conditions",
+    link: "https://medium.com/@frankcamarena/algorithmic-trading-analysis",
+  },
 ];
 
 const skillCategories = [
@@ -70,8 +102,8 @@ const skillCategories = [
       { name: "Python", level: 80 },
       { name: "R", level: 70 },
       { name: "SQL", level: 75 },
-      { name: "JavaScript", level: 50 }
-    ]
+      { name: "JavaScript", level: 50 },
+    ],
   },
   {
     title: "Visualization Tools",
@@ -80,8 +112,8 @@ const skillCategories = [
       { name: "Tableau", level: 85 },
       { name: "Power BI", level: 80 },
       { name: "Shiny", level: 50 },
-      { name: "Streamlit", level: 50 }
-    ]
+      { name: "Streamlit", level: 50 },
+    ],
   },
   {
     title: "Cloud & Big Data",
@@ -90,8 +122,8 @@ const skillCategories = [
       { name: "AWS", level: 87 },
       { name: "Azure", level: 83 },
       { name: "Apache Spark", level: 78 },
-      { name: "Snowflake", level: 80 }
-    ]
+      { name: "Snowflake", level: 80 },
+    ],
   },
   {
     title: "Tools",
@@ -100,42 +132,42 @@ const skillCategories = [
       { name: "JIRA", level: 90 },
       { name: "Confluence", level: 90 },
       { name: "Lucidchart", level: 80 },
-      { name: "BPMN", level: 80 }
-    ]
-  }
+      { name: "BPMN", level: 80 },
+    ],
+  },
 ];
 
 const certifications = [
   {
     title: "Data Visualization and Storytelling",
     issuer: "Northeastern University",
-    icon: <ChartBar className="text-3xl" />
+    icon: <ChartBar className="text-3xl" />,
   },
   {
     title: "Google Cloud Platform",
     issuer: "Google",
-    icon: <Cloud className="text-3xl" />
+    icon: <Cloud className="text-3xl" />,
   },
   {
     title: "Project Management Certification",
     issuer: "Google",
-    icon: <Award className="text-3xl" />
+    icon: <Award className="text-3xl" />,
   },
   {
     title: "Google Analytics Individual Qualification",
     issuer: "Google",
-    icon: <ChartBar className="text-3xl" />
+    icon: <ChartBar className="text-3xl" />,
   },
   {
     title: "Experiential Network",
     issuer: "Northeastern University",
-    icon: <Database className="text-3xl" />
+    icon: <Database className="text-3xl" />,
   },
   {
     title: "Master in Analytics",
     issuer: "Northeastern University",
-    icon: <GraduationCap className="text-3xl" />
-  }
+    icon: <GraduationCap className="text-3xl" />,
+  },
 ];
 
 export default function Home() {
@@ -147,29 +179,31 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-xl font-bold text-primary">Frank Camarena</h1>
-              <p className="text-sm text-muted-foreground">Business Data Analyst</p>
+              <p className="text-sm text-muted-foreground">
+                Business Data Analyst
+              </p>
             </div>
-            
+
             <div className="flex items-center space-x-4">
-              <a 
-                href="mailto:fgustavocamarena@gmail.com" 
+              <a
+                href="mailto:fgustavocamarena@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 data-testid="link-email-header"
               >
                 <Mail className="w-5 h-5" />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/frankcamarena/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/frankcamarena/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 data-testid="link-linkedin-header"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
-                href="https://github.com/f10frank" 
-                target="_blank" 
+              <a
+                href="https://github.com/f10frank"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 data-testid="link-github-header"
@@ -183,10 +217,10 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="min-h-[80vh] flex items-center text-white relative overflow-hidden">
-        <video 
-          autoPlay 
-          muted 
-          loop 
+        <video
+          autoPlay
+          muted
+          loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
           src={linesGraphVideo}
@@ -194,11 +228,13 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
-              Transforming Data into 
+              Transforming Data into
               <span className="text-white block mt-2"> Strategic Insights</span>
             </h1>
             <p className="text-xl lg:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">
-              Business Data Analyst with 5+ years of experience turning complex datasets into actionable business intelligence that drives $10M+ in value creation.
+              Business Data Analyst with 5+ years of experience turning complex
+              datasets into actionable business intelligence that drives $10M+
+              in value creation.
             </p>
           </div>
         </div>
@@ -211,32 +247,54 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold text-primary mb-6">About Me</h2>
               <p className="text-lg text-muted-foreground mb-6">
-                I'm a passionate Business Data Analyst who specializes in transforming complex datasets into strategic insights that drive business growth. With a strong foundation in statistical analysis, machine learning, and data visualization, I help organizations make data-driven decisions that deliver measurable results.
+                I'm a passionate Business Data Analyst who specializes in
+                transforming complex datasets into strategic insights that drive
+                business growth. With a strong foundation in statistical
+                analysis, machine learning, and data visualization, I help
+                organizations make data-driven decisions that deliver measurable
+                results.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                My expertise spans across financial modeling, predictive analytics, and business intelligence, with a proven track record of implementing data solutions that have generated over $10M in business value across various industries.
+                My expertise spans across financial modeling, predictive
+                analytics, and business analytics, with a proven track record of
+                implementing data solutions that have generated over $10M in
+                business value across various industries.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <Card className="metric-card p-4 text-center">
                   <CardContent className="p-0">
-                    <div className="text-2xl font-bold text-primary" data-testid="text-projects-count">50+</div>
-                    <div className="text-sm text-muted-foreground">Projects Completed</div>
+                    <div
+                      className="text-2xl font-bold text-primary"
+                      data-testid="text-projects-count"
+                    >
+                      50+
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Projects Completed
+                    </div>
                   </CardContent>
                 </Card>
                 <Card className="metric-card p-4 text-center">
                   <CardContent className="p-0">
-                    <div className="text-2xl font-bold text-primary" data-testid="text-experience-years">5+</div>
-                    <div className="text-sm text-muted-foreground">Years Experience</div>
+                    <div
+                      className="text-2xl font-bold text-primary"
+                      data-testid="text-experience-years"
+                    >
+                      5+
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      Years Experience
+                    </div>
                   </CardContent>
                 </Card>
               </div>
             </div>
             <div className="flex justify-center">
               <div className="relative">
-                <img 
+                <img
                   src={profileImage}
-                  alt="Alexander Rodriguez - Business Data Analyst" 
-                  className="w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white" 
+                  alt="Alexander Rodriguez - Business Data Analyst"
+                  className="w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white"
                 />
                 <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-transparent"></div>
               </div>
@@ -249,24 +307,35 @@ export default function Home() {
       <section id="projects" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Featured Projects</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">
+              Featured Projects
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Explore my portfolio of data-driven solutions that have delivered measurable business impact across various industries and use cases.
+              Explore my portfolio of data-driven solutions that have delivered
+              measurable business impact across various industries and use
+              cases.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
-              <Card key={project.id} className="card-hover overflow-hidden" data-testid={`card-project-${project.id}`}>
+              <Card
+                key={project.id}
+                className="card-hover overflow-hidden"
+                data-testid={`card-project-${project.id}`}
+              >
                 <div className="aspect-video overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105" 
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                   />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-primary mb-3" data-testid={`text-project-title-${project.id}`}>
+                  <h3
+                    className="text-xl font-semibold text-primary mb-3"
+                    data-testid={`text-project-title-${project.id}`}
+                  >
                     {project.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
@@ -274,7 +343,11 @@ export default function Home() {
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, index) => (
-                      <Badge key={index} variant="secondary" className="skill-tag">
+                      <Badge
+                        key={index}
+                        variant="secondary"
+                        className="skill-tag"
+                      >
                         {tech}
                       </Badge>
                     ))}
@@ -282,9 +355,9 @@ export default function Home() {
                   <div className="text-sm text-muted-foreground mb-4">
                     <strong>Key Insights:</strong> {project.insights}
                   </div>
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
+                  <a
+                    href={project.link}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-secondary hover:text-primary transition-colors font-medium"
                     data-testid={`link-project-case-study-${project.id}`}
@@ -302,30 +375,41 @@ export default function Home() {
       <section id="skills" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Technical Skills</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">
+              Technical Skills
+            </h2>
             <p className="text-xl text-muted-foreground">
-              Comprehensive toolkit for modern data analysis and business intelligence
+              Comprehensive toolkit for modern data analysis and business
+              intelligence
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {skillCategories.map((category, categoryIndex) => (
-              <Card key={categoryIndex} className="p-6" data-testid={`card-skill-category-${categoryIndex}`}>
+              <Card
+                key={categoryIndex}
+                className="p-6"
+                data-testid={`card-skill-category-${categoryIndex}`}
+              >
                 <CardContent className="p-0">
-                  <div className="text-primary mb-4">
-                    {category.icon}
-                  </div>
-                  <h3 className="text-lg font-semibold text-primary mb-4">{category.title}</h3>
+                  <div className="text-primary mb-4">{category.icon}</div>
+                  <h3 className="text-lg font-semibold text-primary mb-4">
+                    {category.title}
+                  </h3>
                   <div className="space-y-4">
                     {category.skills.map((skill, skillIndex) => (
                       <div key={skillIndex} className="space-y-2">
                         <div className="flex justify-between items-center">
-                          <span className="text-sm font-medium">{skill.name}</span>
-                          <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                          <span className="text-sm font-medium">
+                            {skill.name}
+                          </span>
+                          <span className="text-sm text-muted-foreground">
+                            {skill.level}%
+                          </span>
                         </div>
                         <div className="w-full bg-muted rounded-full h-2">
-                          <div 
-                            className="bg-secondary h-2 rounded-full transition-all duration-300" 
+                          <div
+                            className="bg-secondary h-2 rounded-full transition-all duration-300"
                             style={{ width: `${skill.level}%` }}
                           ></div>
                         </div>
@@ -343,25 +427,30 @@ export default function Home() {
       <section id="certifications" className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">Certifications & Credentials</h2>
+            <h2 className="text-4xl font-bold text-primary mb-4">
+              Certifications & Credentials
+            </h2>
             <p className="text-xl text-muted-foreground">
               Validated expertise through industry-recognized certifications
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
-              <Card key={index} className="p-6 text-center" data-testid={`card-certification-${index}`}>
+              <Card
+                key={index}
+                className="p-6 text-center"
+                data-testid={`card-certification-${index}`}
+              >
                 <CardContent className="p-0">
-                  <div className="text-primary mb-3">
-                    {cert.icon}
-                  </div>
-                  <h3 className="font-semibold text-primary mb-2" data-testid={`text-cert-title-${index}`}>
+                  <div className="text-primary mb-3">{cert.icon}</div>
+                  <h3
+                    className="font-semibold text-primary mb-2"
+                    data-testid={`text-cert-title-${index}`}
+                  >
                     {cert.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {cert.issuer}
-                  </p>
+                  <p className="text-sm text-muted-foreground">{cert.issuer}</p>
                 </CardContent>
               </Card>
             ))}
@@ -374,10 +463,12 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Ready to transform your data into strategic insights? Let's discuss how I can help drive your business forward through analytics and data-driven decision making.
+            Ready to transform your data into strategic insights? Let's discuss
+            how I can help drive your business forward through analytics and
+            data-driven decision making.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
+            <Button
               asChild
               className="bg-white text-tableau-primary hover:bg-tableau-light px-8 py-3"
               data-testid="button-send-email"
@@ -387,13 +478,17 @@ export default function Home() {
                 Send Email
               </a>
             </Button>
-            <Button 
+            <Button
               asChild
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 bg-transparent"
               data-testid="button-connect-linkedin"
             >
-              <a href="https://linkedin.com/in/alexrodriguez" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://linkedin.com/in/alexrodriguez"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="mr-2 w-4 h-4" />
                 Connect on LinkedIn
               </a>
@@ -408,28 +503,31 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-semibold mb-4">Frank Camarena</h3>
-              <p className="text-gray-300 mb-4">Business Data Analyst specializing in transforming complex data into strategic business insights.</p>
+              <p className="text-gray-300 mb-4">
+                Business Data Analyst specializing in transforming complex data
+                into strategic business insights.
+              </p>
               <div className="flex space-x-4">
-                <a 
-                  href="https://www.linkedin.com/in/frankcamarena/" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/frankcamarena/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
                   data-testid="link-linkedin-footer"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
-                <a 
-                  href="https://github.com/f10frank" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/f10frank"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
                   data-testid="link-github-footer"
                 >
                   <Github className="w-5 h-5" />
                 </a>
-                <a 
-                  href="mailto:fgustavocamarena@gmail.com" 
+                <a
+                  href="mailto:fgustavocamarena@gmail.com"
                   className="text-gray-300 hover:text-white transition-colors"
                   data-testid="link-email-footer"
                 >
@@ -437,34 +535,70 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#about" className="text-gray-300 hover:text-white transition-colors" data-testid="link-about">About</a></li>
-                <li><a href="#projects" className="text-gray-300 hover:text-white transition-colors" data-testid="link-projects">Projects</a></li>
-                <li><a href="#skills" className="text-gray-300 hover:text-white transition-colors" data-testid="link-skills">Skills</a></li>
-                <li><a href="#certifications" className="text-gray-300 hover:text-white transition-colors" data-testid="link-certifications">Certifications</a></li>
+                <li>
+                  <a
+                    href="#about"
+                    className="text-gray-300 hover:text-white transition-colors"
+                    data-testid="link-about"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#projects"
+                    className="text-gray-300 hover:text-white transition-colors"
+                    data-testid="link-projects"
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#skills"
+                    className="text-gray-300 hover:text-white transition-colors"
+                    data-testid="link-skills"
+                  >
+                    Skills
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#certifications"
+                    className="text-gray-300 hover:text-white transition-colors"
+                    data-testid="link-certifications"
+                  >
+                    Certifications
+                  </a>
+                </li>
               </ul>
             </div>
-            
+
             <div>
-              <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
+              <h3 className="text-lg font-semibold mb-4">
+                Contact Information
+              </h3>
               <div className="space-y-2 text-gray-300">
                 <p className="flex items-center">
-                  <Mail className="mr-2 w-4 h-4" /> 
-                  <span data-testid="text-email">fgustavocamarena@gmail.com</span>
+                  <Mail className="mr-2 w-4 h-4" />
+                  <span data-testid="text-email">
+                    fgustavocamarena@gmail.com
+                  </span>
                 </p>
                 <p className="flex items-center">
-                  <MapPin className="mr-2 w-4 h-4" /> 
+                  <MapPin className="mr-2 w-4 h-4" />
                   <span data-testid="text-location">Toronto, ON</span>
                 </p>
               </div>
             </div>
           </div>
-          
+
           <hr className="border-gray-600 my-8" />
-          
+
           <div className="text-center text-gray-300">
             <p>&copy; 2024 Frank Camarena. All rights reserved.</p>
           </div>

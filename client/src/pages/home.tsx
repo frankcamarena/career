@@ -67,20 +67,20 @@ const skillCategories = [
     title: "Programming Languages",
     icon: <Code className="text-2xl" />,
     skills: [
-      { name: "Python", level: 95 },
-      { name: "R", level: 88 },
-      { name: "SQL", level: 92 },
-      { name: "SAS", level: 75 }
+      { name: "Python", level: 80 },
+      { name: "R", level: 70 },
+      { name: "SQL", level: 75 },
+      { name: "JavaScript", level: 50 }
     ]
   },
   {
     title: "Visualization Tools",
     icon: <ChartBar className="text-2xl" />,
     skills: [
-      { name: "Tableau", level: 98 },
-      { name: "Power BI", level: 90 },
-      { name: "D3.js", level: 82 },
-      { name: "Plotly", level: 85 }
+      { name: "Tableau", level: 85 },
+      { name: "Power BI", level: 80 },
+      { name: "Shiny", level: 50 },
+      { name: "Streamlit", level: 50 }
     ]
   },
   {
@@ -94,13 +94,13 @@ const skillCategories = [
     ]
   },
   {
-    title: "Machine Learning",
-    icon: <Brain className="text-2xl" />,
+    title: "Tools",
+    icon: <Code className="text-2xl" />,
     skills: [
-      { name: "Scikit-learn", level: 93 },
-      { name: "XGBoost", level: 89 },
-      { name: "TensorFlow", level: 76 },
-      { name: "PyTorch", level: 72 }
+      { name: "JIRA", level: 90 },
+      { name: "Confluence", level: 90 },
+      { name: "Lucidchart", level: 80 },
+      { name: "BPMN", level: 80 }
     ]
   }
 ];
@@ -109,37 +109,34 @@ const certifications = [
   {
     title: "Tableau Desktop Specialist",
     issuer: "Salesforce/Tableau",
-    year: "2024",
     icon: <Award className="text-3xl" />
   },
   {
     title: "AWS Certified Solutions Architect",
     issuer: "Amazon Web Services",
-    year: "2023",
+
     icon: <Cloud className="text-3xl" />
   },
   {
     title: "Microsoft Certified: Azure Data Scientist",
     issuer: "Microsoft",
-    year: "2023",
+
     icon: <Award className="text-3xl" />
   },
   {
     title: "Google Analytics Individual Qualification",
     issuer: "Google",
-    year: "2023",
+
     icon: <ChartBar className="text-3xl" />
   },
   {
     title: "Certified Analytics Professional (CAP)",
     issuer: "INFORMS",
-    year: "2022",
     icon: <Database className="text-3xl" />
   },
   {
     title: "Master of Science in Data Science",
     issuer: "Stanford University",
-    year: "2020",
     icon: <GraduationCap className="text-3xl" />
   }
 ];
@@ -148,52 +145,13 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
+      <header className="bg-background border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-xl font-bold text-primary">Frank Camarena</h1>
               <p className="text-sm text-muted-foreground">Business Data Analyst</p>
             </div>
-            
-            {/* Navigation Menu */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <a 
-                href="#about" 
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
-                data-testid="nav-about"
-              >
-                About
-              </a>
-              <a 
-                href="#projects" 
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
-                data-testid="nav-projects"
-              >
-                Projects
-              </a>
-              <a 
-                href="#skills" 
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
-                data-testid="nav-skills"
-              >
-                Skills
-              </a>
-              <a 
-                href="#certifications" 
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
-                data-testid="nav-certifications"
-              >
-                Certifications
-              </a>
-              <a 
-                href="#contact" 
-                className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium"
-                data-testid="nav-contact"
-              >
-                Contact
-              </a>
-            </nav>
             
             <div className="flex items-center space-x-4">
               <a 
@@ -245,23 +203,6 @@ export default function Home() {
             <p className="text-xl lg:text-2xl mb-10 opacity-90 max-w-3xl mx-auto">
               Business Data Analyst with 5+ years of experience turning complex datasets into actionable business intelligence that drives $10M+ in value creation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a 
-                href="#projects" 
-                className="bg-white text-blue-600 px-10 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center text-lg"
-                data-testid="button-view-work"
-              >
-                View My Work
-                <ChartBar className="ml-3 w-5 h-5" />
-              </a>
-              <a 
-                href="#contact" 
-                className="border-2 border-white text-white px-10 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center text-lg"
-                data-testid="button-get-in-touch"
-              >
-                Get In Touch
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -434,7 +375,7 @@ export default function Home() {
                     {cert.title}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    {cert.issuer} • {cert.year}
+                    {cert.issuer}
                   </p>
                 </CardContent>
               </Card>
@@ -530,12 +471,8 @@ export default function Home() {
                   <span data-testid="text-email">fgustavocamarena@gmail.com</span>
                 </p>
                 <p className="flex items-center">
-                  <Phone className="mr-2 w-4 h-4" /> 
-                  <span data-testid="text-phone">+1 (555) 123-4567</span>
-                </p>
-                <p className="flex items-center">
                   <MapPin className="mr-2 w-4 h-4" /> 
-                  <span data-testid="text-location">New York, NY</span>
+                  <span data-testid="text-location">Toronto, ON</span>
                 </p>
               </div>
             </div>

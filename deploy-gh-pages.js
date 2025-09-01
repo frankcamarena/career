@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 console.log('🔨 Building project...');
-execSync('npx vite build', { stdio: 'inherit' });
+execSync('npx vite build --base=/career/', { stdio: 'inherit' });
 
 console.log('📋 Copying build files to docs folder for GitHub Pages...');
 const distPath = path.join(__dirname, 'dist', 'public');

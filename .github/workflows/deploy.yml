@@ -30,6 +30,9 @@ jobs:
     - name: Build frontend only
       run: npx vite build --mode production
 
+    - name: Copy index.html to 404.html for SPA routing
+      run: cp ./dist/public/index.html ./dist/public/404.html
+
     - name: Setup Pages
       uses: actions/configure-pages@v3
 
